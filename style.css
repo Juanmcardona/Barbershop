@@ -1,0 +1,226 @@
+/* Estilos generales */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #797878;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0 ;
+    height: 100px;
+    width: 100%;
+    z-index: +2;
+  }
+
+  header img { /*Este es el logo*/
+    width: 500px;
+    height: auto;
+    position: static;
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  
+  header .signup {
+    background-color: #797878;
+    padding: 15px;
+    color: #a5a4a4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    background-color: #d3d0d1;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .first {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Se asegura de que el contenedor tenga una altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para mejorar la visibilidad del texto */
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2; /* Asegura que el texto esté encima de la imagen y el overlay */
+    padding: 20px;
+    max-width: 700px;
+}
+    
+    .banner-content h1 {
+        display: flex;
+    font-size: 90px;
+    text-shadow: #484848 3px 3px;
+    }
+    
+    .banner-content p {
+        padding-top: 20px;
+        color: #dcdcdc;
+        font-size: 20px;
+        text-shadow: #484848 2px 2px;
+    }
+
+    .flex-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+      .product {
+        background-color: rgb(243, 243, 243);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .product img {
+        width: 400px;
+        border-radius: 10px;
+      }
+
+      .grid-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+        padding: 40px 20px;
+      }
+      .grid-item {
+        background-color: #cbcbcb;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 35px;
+        color: #333;
+        place-items: center;
+      }
+      
+      .grid-item p {
+        font-size: 18px;
+        color: #3f3f3f;
+      }
+      
+      .grid-item img {
+        width: 100px;
+        height: auto;
+      }
+      
+      .video-container {
+        max-width: 800px; /* Ajusta el ancho máximo */
+        width: 90%; /* Hace que sea responsivo */
+        margin: 40px auto; /* Centra el cuadro del video */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .video-container video {
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      .call {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 85px;
+      }
+
+      .call h2 {
+        font-size: 50px;
+      }
+
+      .call p {
+        font-size: 30px;
+      }
+
+      .footer {
+        background: rgba(128, 128, 128, 0.8); /* Gris medio, 80% transparente */
+        padding: 30px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 180px;
+      }
+      
+      .footer-content img {
+        width: 40px; /* Tamaño de los íconos */
+        height: 40px;
+        transition: transform 0.3s ease;
+      }
+      
+      .footer-content img:hover {
+        transform: scale(1.2); /* Efecto zoom al pasar el mouse */
+      }
