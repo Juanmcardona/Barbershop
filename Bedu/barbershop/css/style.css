@@ -1,0 +1,380 @@
+/* Estilos generales */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #797878;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0 ;
+    height: 100px;
+    width: 100%;
+    z-index: +2;
+  }
+
+  header img { /*Este es el logo*/
+    width: 500px;
+    height: auto;
+    position: static;
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  
+  header .signup {
+    background-color: #797878;
+    padding: 15px;
+    color: #a5a4a4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    background-color: #d3d0d1;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .first {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Se asegura de que el contenedor tenga una altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para mejorar la visibilidad del texto */
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2; /* Asegura que el texto esté encima de la imagen y el overlay */
+    padding: 20px;
+    max-width: 700px;
+}
+    
+    .banner-content h1 {
+        display: flex;
+    font-size: 90px;
+    text-shadow: #484848 3px 3px;
+    }
+
+    .banner-content h1 {
+      display: inline-block;  /* Necesario para que transform funcione bien en links */
+      transition: transform 0.3s ease;  /* Esto hace que el cambio sea suave */
+    }
+    
+    .banner-content h1:hover {
+      transform: scale(1.2);
+    }
+    
+    .banner-content p {
+        padding-top: 20px;
+        color: #dcdcdc;
+        font-size: 20px;
+        text-shadow: #484848 2px 2px;
+    }
+
+    .flex-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+      .product {
+        background-color: rgb(243, 243, 243);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .product img {
+        width: 400px;
+        border-radius: 10px;
+      }
+
+      .grid-section {
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        overflow-x: auto;
+        gap: 90px;
+        padding: 40px 20px;
+      }
+      .grid-item {
+        background-color: #cbcbcb;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 35px;
+        color: #333;
+        place-items: center;
+      }
+      
+      .grid-item:hover {
+        transform: translateY(-3px) scale(1.1);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+      .grid-item p {
+        font-size: 18px;
+        color: #3f3f3f;
+      }
+      
+      .grid-item img {
+        width: 100px;
+        height: auto;
+      }
+      
+      .video-container {
+        max-width: 800px; /* Ajusta el ancho máximo */
+        width: 90%; /* Hace que sea responsivo */
+        margin: 40px auto; /* Centra el cuadro del video */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .video-container video {
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      .call {
+        text-align: center;
+        background-color: #c4c4c4;
+        color: rgb(53, 51, 51);
+        padding: 85px;
+      }
+
+      .call h2 {
+        font-size: 50px;
+      }
+
+      .call p {
+        font-size: 30px;
+      }
+
+      .footer {
+        background-color: #222;
+        color: #eee;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      
+      .footer p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+      
+      .footer .social-icons {
+        margin-top: 10px;
+      }
+      
+      .footer .social-icons a {
+        display: inline-block;
+        margin: 0 8px;
+        transition: transform 0.3s ease;
+      }
+      
+      .footer .social-icons a img {
+        width: 24px;
+        height: 24px;
+      }
+      
+      .footer .social-icons a:hover {
+        transform: scale(1.2);
+      }
+
+      .carousel-container {
+        width: 90%;
+        overflow: hidden;
+        margin: 40px auto;
+        position: relative;
+    }
+    
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        text-align: center;
+        background-color: rgb(212, 211, 211);
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .carousel-item img {
+        width: 400px;
+        border-radius: 40px;
+    }
+    
+    /* Botones del carrusel */
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: rgb(3, 3, 3);
+        border: none;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .carousel-button:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+    }
+    
+    .carousel-button.prev {
+        left: 10px;
+        color: gray;
+    }
+    
+    .carousel-button.next {
+        right: 10px;
+        background-image: ('')
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1); /* invierte el color — las hace negras */
+    }
+
+    /* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  header img {
+    width: 250px;
+    margin: 20px 0;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .banner-content h1 {
+    font-size: 40px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .grid-section {
+    margin-top: 100px;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .grid-item {
+    font-size: 25px;
+  }
+
+  .grid-item p {
+    font-size: 14px;
+  }
+
+  .call {
+    padding: 40px 20px;
+  }
+
+  .call h2 {
+    font-size: 30px;
+  }
+
+  .call p {
+    font-size: 18px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+  }
+
+}

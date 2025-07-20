@@ -1,0 +1,193 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b1b1b1;
+    padding-top: 120px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0 ;
+    height: 100px;
+    width: 100%;
+    z-index: +2;
+  }
+
+  header img { /*Este es el logo*/
+    width: 500px;
+    height: auto;
+    position: static;
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  
+  header .signup {
+    background-color: #797878;
+    padding: 15px;
+    color: #a5a4a4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    background-color: #d3d0d1;
+    border-radius: 5px;
+    color: black;
+  
+  }
+
+  #our-story {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    color: rgba(79, 79, 79, 0.848);  /* Texto negro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#our-story * {
+  color: #333333;  /* Todo hijo también negro */
+}
+
+  
+  #our-story img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  .footer .social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .social-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  header img {
+    width: 250px;
+    margin: 20px 0;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .banner-content h1 {
+    font-size: 40px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .grid-section {
+    margin-top: 100px;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .grid-item {
+    font-size: 25px;
+  }
+
+  .grid-item p {
+    font-size: 14px;
+  }
+
+  .call {
+    padding: 40px 20px;
+  }
+
+  .call h2 {
+    font-size: 30px;
+  }
+
+  .call p {
+    font-size: 18px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+  }
+
+}
